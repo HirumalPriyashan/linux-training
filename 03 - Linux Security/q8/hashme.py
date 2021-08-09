@@ -8,9 +8,9 @@ def check(args):
 	return True
 
 def main(phrase):
-	salt = uuid.uuid4().hex
-	print('salt: ' + salt)
-	hash_obj = hashlib.pbkdf2_hmac('sha512', phrase.encode(), salt.encode(), 200000)
-	print(hash_obj.hex())
+	salt = uuid.uuid4().hex # generate random salt
+	# print('salt: ' + salt)
+	hash_obj = hashlib.sha512(phrase.encode + salt.encode()).hexdigest()
+	print(hash_obj)
 
 if check(sys.argv): main(sys.argv[1])

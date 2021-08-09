@@ -8,8 +8,8 @@ def check(args):
 	return True
 
 def main(phrase):
-	salt = uuid.uuid4().hex
-	print('salt: ' + salt)
+	salt = uuid.uuid4().hex # generate random salt
+	# print('salt: ' + salt)
 	hash_obj = hashlib.pbkdf2_hmac('sha512', phrase.encode(), salt.encode(), 200000)
 	print(hash_obj.hex())
 
