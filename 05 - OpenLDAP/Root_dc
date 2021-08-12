@@ -1,0 +1,5 @@
+dn: dc=ltacademy,dc=com
+dc: ltacademy
+o: ltacademy
+objectclass: organization
+objectclass: dcObject

@@ -1,0 +1,54 @@
+
+
+dn: ou=employees,dc=ltacademy,dc=com
+objectclass: organizationalunit
+ou: Employees
+description: Employees
+
+
+dn: ou=contractors,ou=employees,dc=ltacademy,dc=com
+objectclass: organizationalunit
+ou: contractors
+description: Contractors
+
+dn: ou=permanent,ou=employees,dc=ltacademy,dc=com
+objectclass: organizationalunit
+ou: permanent
+description: Permanent Employees
+
+
+dn: ou=johannesburg,ou=contractors,ou=employees,dc=ltacademy,dc=com
+objectclass: organizationalunit
+ou: johannesburg
+description: Johannesburg Contractors
+
+dn: ou=colombo,ou=contractors,ou=employees,dc=ltacademy,dc=com
+objectclass: organizationalunit
+ou: colombo
+description: Colombo Contractors
+
+dn: ou=newyork,ou=contractors,ou=employees,dc=ltacademy,dc=com
+objectclass: organizationalunit
+ou: newyork
+description: New York Contractors
+
+dn: ou=moscow,ou=contractors,ou=employees,dc=ltacademy,dc=com
+objectclass: organizationalunit
+ou: moscow
+description: Moscow Contractors
+
+dn: ou=amsterdam,ou=contractors,ou=employees,dc=ltacademy,dc=com
+objectclass: organizationalunit
+ou: amsterdam
+description: Amsterdam Contractors
+
+
+dn: ou=london,ou=permanent,ou=employees,dc=ltacademy,dc=com
+objectclass: organizationalunit
+ou: london
+description: London Permanent Employees
+
+dn: ou=berlin,ou=permanent,ou=employees,dc=ltacademy,dc=com
+objectclass: organizationalunit
+ou: berlin
+description: Berlin Permanent Employees

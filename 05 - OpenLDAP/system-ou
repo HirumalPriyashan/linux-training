@@ -1,0 +1,4 @@
+dn: ou=system,dc=ltacademy,dc=com
+objectclass: organizationalunit
+ou: system
+description: System
