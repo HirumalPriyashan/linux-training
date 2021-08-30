@@ -1,0 +1,83 @@
+# ROOT DN
+dn: dc=wpa,dc=com
+dc: wpa
+o: wpa
+objectclass: organization
+objectclass: dcObject
+
+# Subtree for employees
+dn: ou=employees,dc=wpa,dc=com
+ou: employees
+objectClass: organizationalunit
+
+# Subtree for groups
+dn: ou=groups,ou=employees,dc=wpa,dc=com
+ou: groups
+objectClass: organizationalunit
+
+# privileged group
+dn: cn=privileged,ou=groups,ou=employees,dc=wpa,dc=com
+cn: privileged
+objectClass: groupOfNames
+member: uid=owenhudson,ou=employees,dc=wpa,dc=com
+member: uid=rachelburgess,ou=employees,dc=wpa,dc=com
+
+# nonprivileged group
+dn: cn=nonprivileged,ou=groups,ou=employees,dc=wpa,dc=com
+cn: nonprivileged
+objectClass: groupOfNames
+member: uid=marymathis,ou=employees,dc=wpa,dc=com
+member: uid=mollyvaughan,ou=employees,dc=wpa,dc=com
+
+# employees info
+dn: uid=owenhudson,ou=employees,dc=wpa,dc=com
+objectClass: inetOrgPerson
+objectClass: top
+cn: Owen
+sn: Hudson
+mail: owen.hudson@lt.com
+mobile: 94771111111
+homePhone: 940112820001
+employeeType: permanent
+registeredAddress: London
+uid: owenhudson
+userPassword: {SSHA}18wwAYHxJ7cRK/RbeSzTjzPD2VmAGk49 
+
+dn: uid=rachelburgess,ou=employees,dc=wpa,dc=com
+objectClass: inetOrgPerson
+objectClass: top
+cn: Rachel
+sn: Burgess
+mail: rachel.burgess@lt.com
+mobile: 94771111112
+homePhone: 940112820002
+employeeType: permanent
+registeredAddress: London
+uid: rachelburgess
+userPassword: {SSHA}18wwAYHxJ7cRK/RbeSzTjzPD2VmAGk49
+
+dn: uid=marymathis,ou=employees,dc=wpa,dc=com
+objectClass: inetOrgPerson
+objectClass: top
+cn: Mary
+sn: Mathis
+mail: mary.mathis@lt.com
+mobile: 94771111113
+homePhone: 940112820003
+employeeType: permanent
+registeredAddress: London
+uid: marymathis
+userPassword: {SSHA}18wwAYHxJ7cRK/RbeSzTjzPD2VmAGk49
+
+dn: uid=mollyvaughan,ou=employees,dc=wpa,dc=com
+objectClass: inetOrgPerson
+objectClass: top
+cn: Molly
+sn: Vaughan
+mail: molly.vaughan@lt.com
+mobile: 94771111114
+homePhone: 940112820004
+employeeType: permanent
+registeredAddress: London
+uid: mollyvaughan
+userPassword: {SSHA}18wwAYHxJ7cRK/RbeSzTjzPD2VmAGk49
